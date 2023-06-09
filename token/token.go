@@ -26,6 +26,10 @@ const (
 	LT = "<"
 	GT = ">"
 
+	// Comparision operators
+	EQ    = "=="
+	NO_EQ = "!="
+
 	// Delimters
 	COMMA     = ","
 	SEMICOLON = ";"
