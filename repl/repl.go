@@ -9,12 +9,13 @@ import (
 	"github.com/kishooore/monkey/token"
 )
 
-const PROMT = ">>"
+const PROMPT = ">> "
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
 
 	for {
+		fmt.Printf(PROMPT)
 		scanned := scanner.Scan()
 
 		if !scanned {
